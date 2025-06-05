@@ -5,8 +5,8 @@ import React from 'react';
 const Card = ({ product }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
-      <div className="relative w-full h-60">
-        <Image src={product.image} alt={product.name} layout="fill" objectFit="cover" className="rounded-t-lg" />
+      <div className="relative w-full h-70">
+        <Image src={product.image} alt={product.name} layout="fill"  className="rounded-t-lg" />
       </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-800 mb-2">{product.name}</h3>
