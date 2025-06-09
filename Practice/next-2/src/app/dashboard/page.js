@@ -22,6 +22,7 @@ import {
   LayoutDashboard,
 } from "lucide-react";
 import config from "@/config/env";
+import Image from "next/image";
 
 // --- Theme Context ---
 // Creates a React context to manage the global theme (light/dark) state.
@@ -89,10 +90,8 @@ function Navbar({ toggleSidebar }) {
         </button>
         {/* Application title/logo with a vibrant icon */}
         <span className="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400 flex items-center">
-          <LayoutDashboard
-            size={28}
-            className="inline-block mr-2 text-purple-600 dark:text-purple-400"
-          />
+         <Image src="https://cdn-icons-png.flaticon.com/128/4725/4725681.png" width={20} priority
+  height={20} alt="icon" className="mr-1"/>
           HR Dashboard
         </span>
       </div>

@@ -67,6 +67,11 @@ function AdminLoginPage() {
         // Display the error message from the backend, or a generic one
         throw new Error(data.message || 'Login failed. Please check your credentials.');
       }
+
+      const token = 'abc123'; // Assuming the API returns a token on successful login
+
+      document.cookie = `token=${token}; path=/;`; // Set a cookie with the token (replace 'your_token_here' with actual token)
+      document.cookie = `role=admin; path=/;`; // Set a cookie for the user role
       
       // If login is successful, set success message and clear form fields
       setSuccess('Login successful! Redirecting to dashboard...');

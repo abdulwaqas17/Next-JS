@@ -1,15 +1,30 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter,Roboto,Lato,Moon_Dance } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const inter = Inter ({
+  subsets : ['latin'],
+  display : 'swap'
+  
+})
+const roboto = Roboto ({
+  subsets : ['latin'],
+  display : 'swap',
+  weight : ['400']
+  
+})
+const lato = Lato ({
+  subsets : ['latin'],
+  display : 'swap',
+  weight : ['400']
+  
+})
+const moon_dance = Moon_Dance ({
+  subsets : ['latin'],
+  display : 'swap',
+  weight : ['400']
+  
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={lato.className}
       >
         {children}
       </body>
