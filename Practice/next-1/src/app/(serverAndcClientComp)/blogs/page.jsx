@@ -1,6 +1,16 @@
 // app/products/page.jsx
 
+
+export const metadata = {
+
+  title : 'Blog Page',
+  discription : 'This is a blog page where you can find various articles and posts.',
+  keywords : 'blog, articles, posts, news, updates',
+
+
+}
 import ProductsList from '@/components/serverAndClientComp/ProductsList';
+
 
 export default function ProductsPage() {
   return (
