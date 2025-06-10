@@ -1,5 +1,6 @@
 import { Inter,Roboto,Lato,Moon_Dance } from "next/font/google";
 import "./globals.css";
+import LoadingIndicator from "@/components/LoadingIndicator";
 
 const inter = Inter ({
   subsets : ['latin'],
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
       <body
         className={lato.className}
       >
+        <LoadingIndicator />
         {children}
       </body>
     </html>

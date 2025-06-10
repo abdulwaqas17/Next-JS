@@ -78,7 +78,7 @@ function Navbar({ toggleSidebar }) {
   const { theme, toggleTheme } = useContext(ThemeContext); // Consume theme context
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 h-16 bg-white dark:bg-gray-800 shadow-lg p-4 flex items-center justify-between transition-colors duration-300 border-b border-gray-200 dark:border-gray-700">
+    <nav className="fixed top-0 left-0 right-0 z-50 h-16 bg-white dark:bg-gray-800 shadow-lg p-4 flex items-center justify-between transition-colors duration-300 border-b border-gray-200 dark:border-gray-700">
       <div className="flex items-center">
         {/* Hamburger menu button for mobile screens (hidden on large screens) */}
         <button
@@ -89,7 +89,7 @@ function Navbar({ toggleSidebar }) {
           <Menu size={24} />
         </button>
         {/* Application title/logo with a vibrant icon */}
-        <span className="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400 flex items-center">
+        <span className="md:text-2xl font-extrabold text-indigo-600 dark:text-indigo-400 flex items-center">
          <Image src="https://cdn-icons-png.flaticon.com/128/4725/4725681.png" width={20} priority
   height={20} alt="icon" className="mr-1"/>
           HR Dashboard
